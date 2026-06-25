@@ -1,23 +1,67 @@
 :root{
-    --primarycolour:#4CAF4F;
-   --secondarycolour:#18191F
+    --primarycolor:#4CAF4F;
+    --primary:#18191F;
 }
-.primarycolour{
-    color: var(--primarycolour) !important;
+.textgreen{
+    color: var(--primarycolor) !important;
+    border-radius: none !important;
 }
-.primarycolour :hover{
-    color: var(--primarycolour) !important;
+.textgreen:hover{
+    color: var(--primarycolor) !important;
 }
-.bggreen {
-    background-color: var(--primarycolour);
-    color: white;
+.bggreen{
+    background-color: var(--primarycolor);
+    color: aliceblue;
 }
-.bggreen :hover{
-    color: var(--primarycolour);
+.bggreen:hover{
+    background-color: var(--primarycolor);
+    color: aliceblue;
 }
-.blackcolour{
-  color: var(--secondarycolour)!important;
+.blackcolor{
+    color: var(--primary) !important;
 }
 .customcolor{
-    color: var(--primarycolour) !important; 
+    color: var(--primarycolor) !important;
+}
+.bg-hero{
+    background-color: #F5F7FA;
+}
+.customshadow{
+    box-shadow: 0px 2px 4px 0px #ABBED133;
+
+}
+.bg-color{
+    background-color:  #F5F7FA;
+;
+}
+.btn-size {
+    width: 8%;
+}
+.footer{
+    background-color: #263238;
+;
+}
+.footer-grey{
+    background-color: #515b60 !important;
+}
+.footer-grey ::placeholder{
+    color: white !important;
+}
+
+
+
+@media screen and (max-width:576px){
+.sixe{
+    width: 50%;
+}
+  .btn-size{
+    width: 40%;
+  }  
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+
+  .btn-size{
+    width: 20%;
+  }  
 }
